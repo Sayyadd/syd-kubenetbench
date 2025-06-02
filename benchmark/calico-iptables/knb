@@ -1,0 +1,3 @@
+#!/bin/sh
+# wrapper script for kubenetbench
+/Users/seyidliso/Desktop/KB/Projects/cni-benchmark/benchmark/kubenetbench --session-id=calico-iptables --session-base-dir=. --port-forward=false "$@"

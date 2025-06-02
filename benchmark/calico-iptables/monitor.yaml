@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: knb-monitor
+  labels:
+    knb-sessid: calico-iptables
+    role: monitor
+spec:
+  selector:
+    matchLabels:
+      knb-sessid: calico-iptables
+      role: monitor
+  template:
+    metadata:
+      labels:
+        knb-sessid: calico-iptables
+        role: monitor
+    spec:
+      tolerations:
+      - key: node-role.kubernetes.io/control-plane
+        effect: NoSchedule
+
+      hostAliases:
+      - ip: "10.0.81.124"
+        hostnames:
+        - "cilium-k8s-dev-controlplane-87jzt"
+      - ip: "10.0.81.125"
+        hostnames:
+        - "cilium-k8s-dev-controlplane-d4jnl"
+      - ip: "10.0.81.123"
+        hostnames:
+        - "cilium-k8s-dev-controlplane-j2hn8"
+      - ip: "10.0.81.127"
+        hostnames:
+        - "cilium-k8s-dev-worker-dff9q-62ldg"
+      - ip: "10.0.81.126"
+        hostnames:
+        - "cilium-k8s-dev-worker-dff9q-nwdms"
+      - ip: "10.0.81.128"
+        hostnames:
+        - "cilium-k8s-dev-worker-dff9q-sj9wg"
+
+      #
+      hostNetwork: true
+      hostPID: true
+      hostIPC: true
+
+      containers:
+      - name: kubenetbench-monitor
+        image: registry.kapitalbank.az/sre/benchmark/kubenetbench-monitor:latest
+        securityContext:
+           privileged: true
+           capabilities:
+              add:
+                 # - NET_ADMIN
+                 - SYS_ADMIN
+        ports:
+           - containerPort: 8451
+             hostPort: 8451
+        volumeMounts:
+        - name: host
+          mountPath: /host
+          readOnly: true
+      volumes:
+      - name: host
+        hostPath:
+          path: /
