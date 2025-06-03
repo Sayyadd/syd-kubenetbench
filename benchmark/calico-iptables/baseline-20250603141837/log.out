@@ -1,0 +1,5 @@
+Now please run:
+
+$ tar xvf baseline-20250603141837-perf.data.tar.bz2 -C ~/.debug
+
+wherever you need to run 'perf report' on.

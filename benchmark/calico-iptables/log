@@ -1,78 +1,91 @@
-2025/06/01 21:23:49 ****** ./kubenetbench -s calico-iptables init
-2025/06/01 21:23:49 Starting session monitor
-2025/06/01 21:23:49 Generating ./calico-iptables/monitor.yaml
-2025/06/01 21:23:49 $ kubectl apply -f ./calico-iptables/monitor.yaml 
-2025/06/01 21:23:49 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 10)
-2025/06/01 21:23:53 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 9)
-2025/06/01 21:23:57 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 8)
-2025/06/01 21:24:02 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 7)
-2025/06/01 21:24:06 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 6)
-2025/06/01 21:24:10 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 5)
-2025/06/01 21:24:15 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 4)
-2025/06/01 21:24:19 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 3)
-2025/06/01 21:24:23 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 2)
-2025/06/01 21:24:27 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 1)
-2025/06/01 21:24:32 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 0)
-2025/06/01 21:24:32 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 10)
-2025/06/01 21:24:36 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 9)
-2025/06/01 21:24:40 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 8)
-2025/06/01 21:24:45 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 7)
-2025/06/01 21:24:49 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 6)
-2025/06/01 21:24:53 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 5)
-2025/06/01 21:24:58 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 4)
-2025/06/01 21:25:02 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 3)
-2025/06/01 21:25:06 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 2)
-2025/06/01 21:25:10 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 1)
-2025/06/01 21:25:15 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 0)
-2025/06/01 21:25:15 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 10)
-2025/06/01 21:25:19 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 9)
-2025/06/01 21:25:23 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 8)
-2025/06/01 21:25:28 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 7)
-2025/06/01 21:25:32 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 6)
-2025/06/01 21:25:36 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 5)
-2025/06/01 21:25:40 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 4)
-2025/06/01 21:25:45 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 3)
-2025/06/01 21:25:49 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 2)
-2025/06/01 21:25:53 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 1)
-2025/06/01 21:25:58 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 0)
-2025/06/01 21:25:58 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 10)
-2025/06/01 21:26:02 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 9)
-2025/06/01 21:26:06 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 8)
-2025/06/01 21:26:11 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 7)
-2025/06/01 21:26:15 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 6)
-2025/06/01 21:26:19 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 5)
-2025/06/01 21:26:23 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 4)
-2025/06/01 21:26:28 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 3)
-2025/06/01 21:26:32 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 2)
-2025/06/01 21:26:36 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 1)
-2025/06/01 21:26:40 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 0)
-2025/06/01 21:26:41 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 10)
-2025/06/01 21:26:45 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 9)
-2025/06/01 21:26:49 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 8)
-2025/06/01 21:26:54 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 7)
-2025/06/01 21:26:58 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 6)
-2025/06/01 21:27:02 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 5)
-2025/06/01 21:27:06 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 4)
-2025/06/01 21:27:11 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 3)
-2025/06/01 21:27:15 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 2)
-2025/06/01 21:27:19 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 1)
-2025/06/01 21:27:24 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 0)
-2025/06/01 21:27:24 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 10)
-2025/06/01 21:27:28 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 9)
-2025/06/01 21:27:32 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 8)
-2025/06/01 21:27:37 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 7)
-2025/06/01 21:27:41 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 6)
-2025/06/01 21:27:45 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 5)
-2025/06/01 21:27:50 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 4)
-2025/06/01 21:27:54 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 3)
-2025/06/01 21:27:58 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 2)
-2025/06/01 21:28:02 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 1)
-2025/06/01 21:28:07 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 0)
-2025/06/01 21:28:07 failed to get (some) sysinfo via monitor: GetSysInfoNodes() failed:
-
-Error calling GetSysInfoNode cilium-k8s-dev-controlplane-87jzt after 10 retries (last error:%!w(*fmt.wrapError=&{io error: rpc error: code = Internal desc = stream terminated by RST_STREAM with error code: NO_ERROR 0x14000408178}))
-Error calling GetSysInfoNode cilium-k8s-dev-controlplane-d4jnl after 10 retries (last error:%!w(*fmt.wrapError=&{io error: rpc error: code = Internal desc = stream terminated by RST_STREAM with error code: NO_ERROR 0x14000294140}))
-Error calling GetSysInfoNode cilium-k8s-dev-controlplane-j2hn8 after 10 retries (last error:%!w(*fmt.wrapError=&{io error: rpc error: code = Internal desc = stream terminated by RST_STREAM with error code: NO_ERROR 0x140003b6050}))
-Error calling GetSysInfoNode cilium-k8s-dev-worker-dff9q-62ldg after 10 retries (last error:%!w(*fmt.wrapError=&{io error: rpc error: code = Internal desc = stream terminated by RST_STREAM with error code: NO_ERROR 0x140002d4138}))
-Error calling GetSysInfoNode cilium-k8s-dev-worker-dff9q-nwdms after 10 retries (last error:%!w(*fmt.wrapError=&{io error: rpc error: code = Internal desc = stream terminated by RST_STREAM with error code: NO_ERROR 0x1400012c2c8}))
-Error calling GetSysInfoNode cilium-k8s-dev-worker-dff9q-sj9wg after 10 retries (last error:%!w(*fmt.wrapError=&{io error: rpc error: code = Internal desc = stream terminated by RST_STREAM with error code: NO_ERROR 0x1400033c268}))
+2025/06/03 14:02:22 ****** ./kubenetbench -s calico-iptables init
+2025/06/03 14:02:22 Starting session monitor
+2025/06/03 14:02:22 Generating ./calico-iptables/monitor.yaml
+2025/06/03 14:02:22 $ kubectl apply -f ./calico-iptables/monitor.yaml 
+2025/06/03 14:02:23 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 10)
+2025/06/03 14:02:27 calling GetSysInfoNode on cilium-k8s-dev-controlplane-87jzt/cilium-k8s-dev-controlplane-87jzt (remaining retries: 9)
+2025/06/03 14:02:27 calling GetSysInfoNode on cilium-k8s-dev-controlplane-d4jnl/cilium-k8s-dev-controlplane-d4jnl (remaining retries: 10)
+2025/06/03 14:02:27 calling GetSysInfoNode on cilium-k8s-dev-controlplane-j2hn8/cilium-k8s-dev-controlplane-j2hn8 (remaining retries: 10)
+2025/06/03 14:02:27 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-62ldg/cilium-k8s-dev-worker-dff9q-62ldg (remaining retries: 10)
+2025/06/03 14:02:27 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-nwdms/cilium-k8s-dev-worker-dff9q-nwdms (remaining retries: 10)
+2025/06/03 14:02:27 calling GetSysInfoNode on cilium-k8s-dev-worker-dff9q-sj9wg/cilium-k8s-dev-worker-dff9q-sj9wg (remaining retries: 10)
+2025/06/03 14:18:37 ****** /tmp/cni-benchmark/benchmark/kubenetbench --session-id=calico-iptables --session-base-dir=. --port-forward=false pod2pod -l baseline --cli-on-host --srv-on-host --collect-perf --netperf-type tcp_stream -t 60 --netperf-args=-v --netperf-args=2
+2025/06/03 14:18:37 Generating ./calico-iptables/baseline-20250603141837/netserv.yaml
+2025/06/03 14:18:37 $ kubectl apply -f ./calico-iptables/baseline-20250603141837/netserv.yaml 
+2025/06/03 14:18:39 $ kubectl get pod -l "knb-runid=baseline-20250603141837,role=srv" -o custom-columns=IP:.status.podIP --no-headers # (remaining retries: 30)
+2025/06/03 14:18:39 server_ip=10.0.81.127
+2025/06/03 14:18:39 Generating ./calico-iptables/baseline-20250603141837/client.yaml
+2025/06/03 14:18:39 $ kubectl apply -f ./calico-iptables/baseline-20250603141837/client.yaml 
+2025/06/03 14:18:44 $ kubectl get pod -l "knb-runid=baseline-20250603141837" -o custom-columns=F0:.metadata.name,F1:.spec.nodeName,F2:.status.phase --no-headers 
+2025/06/03 14:18:44 Pods: 
+2025/06/03 14:18:44  [knb-cli cilium-k8s-dev-worker-dff9q-sj9wg Running]
+2025/06/03 14:18:44  [knb-srv cilium-k8s-dev-worker-dff9q-62ldg Running]
+2025/06/03 14:18:44 started collection on monitor cilium-k8s-dev-worker-dff9q-sj9wg
+2025/06/03 14:18:44 started collection on monitor cilium-k8s-dev-worker-dff9q-62ldg
+2025/06/03 14:19:44 client phase: Succeeded
+2025/06/03 14:20:00 perf data for cilium-k8s-dev-worker-dff9q-sj9wg can be found in: ./calico-iptables/baseline-20250603141837/perf-cilium-k8s-dev-worker-dff9q-sj9wg.tar.bz2
+2025/06/03 14:20:14 perf data for cilium-k8s-dev-worker-dff9q-62ldg can be found in: ./calico-iptables/baseline-20250603141837/perf-cilium-k8s-dev-worker-dff9q-62ldg.tar.bz2
+2025/06/03 14:20:14 $ kubectl logs knb-cli > ./calico-iptables/baseline-20250603141837/cli.log 
+2025/06/03 14:20:14 $ kubectl logs knb-srv > ./calico-iptables/baseline-20250603141837/srv.log 
+2025/06/03 14:20:15 $ kubectl delete pod,deployment,service,networkpolicy -l "knb-runid=baseline-20250603141837" 
+2025/06/03 14:29:19 ****** /tmp/cni-benchmark/benchmark/kubenetbench --session-id=calico-iptables --session-base-dir=. --port-forward=false pod2pod -l tcp-stream --collect-perf --netperf-type tcp_stream -t 60
+2025/06/03 14:29:19 Generating ./calico-iptables/tcp-stream-20250603142919/netserv.yaml
+2025/06/03 14:29:19 $ kubectl apply -f ./calico-iptables/tcp-stream-20250603142919/netserv.yaml 
+2025/06/03 14:29:21 $ kubectl get pod -l "knb-runid=tcp-stream-20250603142919,role=srv" -o custom-columns=IP:.status.podIP --no-headers # (remaining retries: 30)
+2025/06/03 14:29:23 $ kubectl get pod -l "knb-runid=tcp-stream-20250603142919,role=srv" -o custom-columns=IP:.status.podIP --no-headers # (remaining retries: 29)
+2025/06/03 14:29:23 server_ip=10.233.35.6
+2025/06/03 14:29:23 Generating ./calico-iptables/tcp-stream-20250603142919/client.yaml
+2025/06/03 14:29:23 $ kubectl apply -f ./calico-iptables/tcp-stream-20250603142919/client.yaml 
+2025/06/03 14:29:29 $ kubectl get pod -l "knb-runid=tcp-stream-20250603142919" -o custom-columns=F0:.metadata.name,F1:.spec.nodeName,F2:.status.phase --no-headers 
+2025/06/03 14:29:29 Pods: 
+2025/06/03 14:29:29  [knb-cli cilium-k8s-dev-worker-dff9q-62ldg Running]
+2025/06/03 14:29:29  [knb-srv cilium-k8s-dev-worker-dff9q-sj9wg Running]
+2025/06/03 14:29:29 started collection on monitor cilium-k8s-dev-worker-dff9q-62ldg
+2025/06/03 14:29:29 started collection on monitor cilium-k8s-dev-worker-dff9q-sj9wg
+2025/06/03 14:30:29 client phase: Succeeded
+2025/06/03 14:30:44 perf data for cilium-k8s-dev-worker-dff9q-62ldg can be found in: ./calico-iptables/tcp-stream-20250603142919/perf-cilium-k8s-dev-worker-dff9q-62ldg.tar.bz2
+2025/06/03 14:30:58 perf data for cilium-k8s-dev-worker-dff9q-sj9wg can be found in: ./calico-iptables/tcp-stream-20250603142919/perf-cilium-k8s-dev-worker-dff9q-sj9wg.tar.bz2
+2025/06/03 14:30:58 $ kubectl logs knb-cli > ./calico-iptables/tcp-stream-20250603142919/cli.log 
+2025/06/03 14:30:59 $ kubectl logs knb-srv > ./calico-iptables/tcp-stream-20250603142919/srv.log 
+2025/06/03 14:30:59 $ kubectl delete pod,deployment,service,networkpolicy -l "knb-runid=tcp-stream-20250603142919" 
+2025/06/03 14:40:31 ****** /tmp/cni-benchmark/benchmark/kubenetbench --session-id=calico-iptables --session-base-dir=. --port-forward=false pod2pod -l tcp-stream --collect-perf --netperf-type tcp_stream -t 60
+2025/06/03 14:40:31 Generating ./calico-iptables/tcp-stream-20250603144031/netserv.yaml
+2025/06/03 14:40:31 $ kubectl apply -f ./calico-iptables/tcp-stream-20250603144031/netserv.yaml 
+2025/06/03 14:40:33 $ kubectl get pod -l "knb-runid=tcp-stream-20250603144031,role=srv" -o custom-columns=IP:.status.podIP --no-headers # (remaining retries: 30)
+2025/06/03 14:40:36 $ kubectl get pod -l "knb-runid=tcp-stream-20250603144031,role=srv" -o custom-columns=IP:.status.podIP --no-headers # (remaining retries: 29)
+2025/06/03 14:40:36 server_ip=10.233.35.7
+2025/06/03 14:40:36 Generating ./calico-iptables/tcp-stream-20250603144031/client.yaml
+2025/06/03 14:40:36 $ kubectl apply -f ./calico-iptables/tcp-stream-20250603144031/client.yaml 
+2025/06/03 14:40:41 $ kubectl get pod -l "knb-runid=tcp-stream-20250603144031" -o custom-columns=F0:.metadata.name,F1:.spec.nodeName,F2:.status.phase --no-headers 
+2025/06/03 14:40:41 Pods: 
+2025/06/03 14:40:41  [knb-cli cilium-k8s-dev-worker-dff9q-62ldg Running]
+2025/06/03 14:40:41  [knb-srv cilium-k8s-dev-worker-dff9q-sj9wg Running]
+2025/06/03 14:40:41 started collection on monitor cilium-k8s-dev-worker-dff9q-62ldg
+2025/06/03 14:40:41 started collection on monitor cilium-k8s-dev-worker-dff9q-sj9wg
+2025/06/03 14:41:41 client phase: Succeeded
+2025/06/03 14:41:56 perf data for cilium-k8s-dev-worker-dff9q-62ldg can be found in: ./calico-iptables/tcp-stream-20250603144031/perf-cilium-k8s-dev-worker-dff9q-62ldg.tar.bz2
+2025/06/03 14:42:11 perf data for cilium-k8s-dev-worker-dff9q-sj9wg can be found in: ./calico-iptables/tcp-stream-20250603144031/perf-cilium-k8s-dev-worker-dff9q-sj9wg.tar.bz2
+2025/06/03 14:42:11 $ kubectl logs knb-cli > ./calico-iptables/tcp-stream-20250603144031/cli.log 
+2025/06/03 14:42:11 $ kubectl logs knb-srv > ./calico-iptables/tcp-stream-20250603144031/srv.log 
+2025/06/03 14:42:11 $ kubectl delete pod,deployment,service,networkpolicy -l "knb-runid=tcp-stream-20250603144031" 
+2025/06/03 14:43:27 ****** /tmp/cni-benchmark/benchmark/kubenetbench --session-id=calico-iptables --session-base-dir=. --port-forward=false pod2pod -l tcp-stream-32 --collect-perf --netperf-type tcp_stream --netperf-nstreams 32 -t 60
+2025/06/03 14:43:27 Generating ./calico-iptables/tcp-stream-32-20250603144327/netserv.yaml
+2025/06/03 14:43:27 $ kubectl apply -f ./calico-iptables/tcp-stream-32-20250603144327/netserv.yaml 
+2025/06/03 14:43:29 $ kubectl get pod -l "knb-runid=tcp-stream-32-20250603144327,role=srv" -o custom-columns=IP:.status.podIP --no-headers # (remaining retries: 30)
+2025/06/03 14:43:31 $ kubectl get pod -l "knb-runid=tcp-stream-32-20250603144327,role=srv" -o custom-columns=IP:.status.podIP --no-headers # (remaining retries: 29)
+2025/06/03 14:43:31 server_ip=10.233.169.70
+2025/06/03 14:43:31 Generating ./calico-iptables/tcp-stream-32-20250603144327/client.yaml
+2025/06/03 14:43:31 $ kubectl apply -f ./calico-iptables/tcp-stream-32-20250603144327/client.yaml 
+2025/06/03 14:43:37 $ kubectl get pod -l "knb-runid=tcp-stream-32-20250603144327" -o custom-columns=F0:.metadata.name,F1:.spec.nodeName,F2:.status.phase --no-headers 
+2025/06/03 14:43:37 Pods: 
+2025/06/03 14:43:37  [knb-cli cilium-k8s-dev-worker-dff9q-sj9wg Running]
+2025/06/03 14:43:37  [knb-srv cilium-k8s-dev-worker-dff9q-62ldg Running]
+2025/06/03 14:43:37 started collection on monitor cilium-k8s-dev-worker-dff9q-sj9wg
+2025/06/03 14:43:37 started collection on monitor cilium-k8s-dev-worker-dff9q-62ldg
+2025/06/03 14:44:37 client phase: Running
+2025/06/03 14:44:47 client phase: Succeeded
+2025/06/03 14:45:01 perf data for cilium-k8s-dev-worker-dff9q-sj9wg can be found in: ./calico-iptables/tcp-stream-32-20250603144327/perf-cilium-k8s-dev-worker-dff9q-sj9wg.tar.bz2
+2025/06/03 14:45:16 perf data for cilium-k8s-dev-worker-dff9q-62ldg can be found in: ./calico-iptables/tcp-stream-32-20250603144327/perf-cilium-k8s-dev-worker-dff9q-62ldg.tar.bz2
+2025/06/03 14:45:16 $ kubectl logs knb-cli > ./calico-iptables/tcp-stream-32-20250603144327/cli.log 
+2025/06/03 14:45:16 $ kubectl logs knb-srv > ./calico-iptables/tcp-stream-32-20250603144327/srv.log 
+2025/06/03 14:45:16 $ kubectl delete pod,deployment,service,networkpolicy -l "knb-runid=tcp-stream-32-20250603144327" 

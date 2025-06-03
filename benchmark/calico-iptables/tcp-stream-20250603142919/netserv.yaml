@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: knb-srv
+  labels : {
+    knb-sessid: calico-iptables,
+    knb-runid: tcp-stream-20250603142919,
+    role: srv,
+  }
+spec:
+  
+  containers:
+  - name: netperf-srv
+    image: cilium/kubenetbench
+    command: ["netserver"]
+    args : [
+        "-D", # dont daemonize
+    ]
+

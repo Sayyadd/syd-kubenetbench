@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: knb-cli
+  labels : {
+     knb-runid: tcp-stream-32-20250603144327,
+     role: cli,
+  }
+spec:
+  restartPolicy: Never
+  
+  affinity:
+     podAntiAffinity:
+         requiredDuringSchedulingIgnoredDuringExecution:
+         - labelSelector:
+              matchExpressions:
+              - key: role
+                operator: In
+                values:
+                - srv
+           topologyKey: "kubernetes.io/hostname"
+
+  containers:
+  - name: netperf-cli
+    image: cilium/kubenetbench
+    command: ["scripts/duper_netperf"]
+    args : [
+        # initial args
+        "32",
+        "-l", "60", # timeout
+        "-j", # enable additional statistics
+        "-H", "10.233.169.70",
+        "-t", "tcp_stream", # testname
+        "--",
+        # Benchmark args
+        "-P", ",8000", # data connection port
+        "-k", "THROUGHPUT,THROUGHPUT_UNITS,THROUGHPUT_CONFID,LOCAL_SEND_SIZE,LOCAL_RECV_SIZE,REMOTE_SEND_SIZE,REMOTE_RECV_SIZE,PROTOCOL,LOCAL_SEND_CALLS,LOCAL_BYTES_PER_SEND,LOCAL_RECV_CALLS,LOCAL_BYTES_PER_RECV,REMOTE_SEND_CALLS,REMOTE_BYTES_PER_SEND,REMOTE_RECV_CALLS,REMOTE_BYTES_PER_RECV,LOCAL_SEND_THROUGHPUT,LOCAL_RECV_THROUGHPUT,REMOTE_SEND_THROUGHPUT,REMOTE_RECV_THROUGHPUT,LOCAL_SYSNAME,LOCAL_RELEASE,LOCAL_VERSION,LOCAL_MACHINE,REMOTEL_SYSNAME,REMOTEL_RELEASE,REMOTEL_VERSION,REMOTEL_MACHINE,COMMAND_LINE,LOCAL_TRANSPORT_RETRANS,REMOTE_TRANSPORT_RETRANS",
+    ]
+

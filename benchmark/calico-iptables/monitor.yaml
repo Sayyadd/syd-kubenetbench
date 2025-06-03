@@ -47,7 +47,7 @@ spec:
 
       containers:
       - name: kubenetbench-monitor
-        image: registry.kapitalbank.az/sre/benchmark/kubenetbench-monitor:latest
+        image: docker.io/cilium/kubenetbench-monitor 
         securityContext:
            privileged: true
            capabilities:
